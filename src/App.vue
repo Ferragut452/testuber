@@ -1,0 +1,46 @@
+<template>
+  <div id="app">
+    <div id="nav">
+      <router-link to="/">List</router-link>
+      <router-link to="/img-page">Image</router-link>
+    </div>
+    <router-view />
+  </div>
+</template>
+
+<style lang="scss">
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#app {
+  margin-top: 50px;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  li {
+    list-style: none;
+  }
+}
+
+#nav {
+  a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 20px;
+    text-decoration: none;
+
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
+}
+</style>
